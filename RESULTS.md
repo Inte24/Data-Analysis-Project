@@ -34,7 +34,7 @@ This forest plot displays the log-hazard ratio (coefficient) and 95% confidence 
 
 ### Key Observations
 
-- **Apatite** (top, far right): The only feature with a strong positive coefficient (+0.55), meaning apatite-rich particles float 74% faster than average. This makes physical sense — apatite is the target ore mineral, selectively collected by flotation reagents.
+- **Apatite** (top, far right): The only feature with a strong positive coefficient (+0.55), meaning apatite-rich particles float 74% faster than average. This makes physical sense, apatite is the target ore mineral, selectively collected by flotation reagents.
 
 - **ECD** (equivalent circle diameter): A small but highly significant positive effect (+0.02). Larger particles float slightly faster in this size fraction.
 
@@ -44,7 +44,7 @@ This forest plot displays the log-hazard ratio (coefficient) and 95% confidence 
 
 - **Orthoclase.surf** and **Sanidine.surf**: Moderate negative effects. Both are feldspar minerals with hydrophilic surfaces.
 
-- **Many features driven to zero**: LASSO regularization has effectively eliminated features like Chalcopyrite, Diopside, Pyrite, Rutile, and most minor mineral surface fractions. Their confidence intervals overlap with zero — they do not significantly affect flotation rate in this model.
+- **Many features driven to zero**: LASSO regularization has effectively eliminated features like Chalcopyrite, Diopside, Pyrite, Rutile, and most minor mineral surface fractions. Their confidence intervals overlap with zero, they do not significantly affect flotation rate in this model.
 
 ---
 
