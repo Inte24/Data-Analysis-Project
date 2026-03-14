@@ -36,8 +36,8 @@ The class label combines a stream code with a size fraction. For example, `CA20`
 
 Data files are not included in this repository due to their size (~700MB total):
 
-- `Traindata_20um.csv` (~207MB) — Primary dataset (796,130 particles, 54 columns)
-- `Traindata.csv` (~485MB) — Full dataset with all size fractions
+- `Traindata_20um.csv` (~207MB) — Primary dataset (796,130 particles, 54 columns) - https://drive.google.com/file/d/1GVB0wzckLw6iFmtLfhzQ24UNjgx6fzV4/view?usp=drive_link
+- `Traindata.csv` (~485MB) — Full dataset with all size fractions - https://drive.google.com/file/d/1JaUAQ9oif9Ai7n_gdvylriAvjs8Ine_D/view?usp=drive_link
 
 Place data files in the project root directory before running the notebook.
 
