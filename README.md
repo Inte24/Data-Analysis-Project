@@ -7,7 +7,7 @@ A Cox Proportional Hazards model with bootstrap LASSO regularization applied to 
 Each row in the dataset represents a single mineral particle analyzed by automated mineralogy. For each particle, the dataset contains:
 
 - **Mineral mass fractions**: Bulk composition (e.g., Apatite, Quartz, Calcite, Pyrite, etc.)
-- **Mineral surface fractions** (`.surf`): Proportion of the particle's exposed surface covered by each mineral — this is what determines flotation behavior
+- **Mineral surface fractions** (`.surf`): Proportion of the particle's exposed surface covered by each mineral, this is what determines flotation behavior
 - **Shape descriptors**: AspectRatio, Solidity, ECD (Equivalent Circle Diameter in µm)
 - **Class label**: Encodes both the flotation stream and size fraction
 
