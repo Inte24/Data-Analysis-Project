@@ -136,7 +136,7 @@ This histogram shows the distribution of R² values computed for each particle's
 
 ### Key Observations
 
-- **Mean R² = 0.96**: The model explains 96% of the variance in individual particle recovery on average. This is an excellent fit.
+- **Mean R² = 0.96**: The model explains 96% of the variance in individual particle recovery on average. 
 
 - **Distribution is sharply peaked around 0.96–0.97**: The vast majority of particles have R² > 0.95, indicating the model consistently fits individual kinetics well across the entire particle population.
 
