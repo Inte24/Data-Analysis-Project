@@ -118,7 +118,7 @@ This 7×7 grid of subplots shows the predicted recovery probability over time fo
 
 - **Wide range of predicted recoveries**: Some particles reach ~90–95% recovery by 6 minutes (highly floatable, likely apatite-rich), while others only reach ~10–20% (poorly floatable gangue particles). This range reflects the heterogeneity of the particle population.
 
-- **Early recovery (0–1.5 min) shows the most discrimination**: The steepest part of the curves — where the most separation between floatable and non-floatable particles occurs — is in the first 1–2 minutes. This aligns with practical flotation circuit design, where the early concentrates (CA, CB) are the highest grade.
+- **Early recovery (0–1.5 min) shows the most discrimination**: The steepest part of the curves, where the most separation between floatable and non-floatable particles occurs — is in the first 1–2 minutes. This aligns with practical flotation circuit design, where the early concentrates (CA, CB) are the highest grade.
 
 - **Curve shapes are consistent**: Despite the diversity in final recovery, all curves share the same functional form (exponential approach to a plateau), confirming the model's first-order kinetic assumption is appropriate.
 
@@ -158,7 +158,7 @@ This boxplot shows the distribution of predicted kinetic rate constants (*k_m*, 
 
 ### Key Observations
 
-- **Apatite** has the highest median rate constant (~0.28 min⁻¹) and the widest interquartile range (0.11–0.40 min⁻¹). This reflects both its high floatability and the natural variability in apatite particle properties (liberation, surface coverage, size). Some apatite particles have *k_m* > 0.5 min⁻¹ — extremely fast floaters — while others are near 0.1 min⁻¹, likely due to gangue locking.
+- **Apatite** has the highest median rate constant (~0.28 min⁻¹) and the widest interquartile range (0.11–0.40 min⁻¹). This reflects both its high floatability and the natural variability in apatite particle properties (liberation, surface coverage, size). Some apatite particles have *k_m* > 0.5 min⁻¹, extremely fast floaters, while others are near 0.1 min⁻¹, likely due to gangue locking.
 
 - **Calcite and Dolomite** have similar median rates (~0.15 min⁻¹), roughly half that of apatite. Both are carbonate minerals that can exhibit some collector uptake but are fundamentally less hydrophobic than apatite. Dolomite shows a slightly wider spread with more high-rate outliers.
 
@@ -168,7 +168,7 @@ This boxplot shows the distribution of predicted kinetic rate constants (*k_m*, 
 
 ### Physical Interpretation
 
-The kinetic rate hierarchy — **Apatite >> Calcite ≈ Dolomite > Quartz > Phlogopite** — directly reflects the hydrophobicity spectrum of these minerals. Apatite, the target ore mineral, responds best to fatty acid collectors. Carbonate gangue (calcite, dolomite) shows moderate inadvertent activation. Silicates and micas are naturally hydrophilic and resist collector adsorption. This ranking is critical for circuit design: it determines the required flotation time, the expected grade-recovery trade-off, and which gangue minerals are most likely to contaminate concentrates.
+The kinetic rate hierarchy: **Apatite >> Calcite ≈ Dolomite > Quartz > Phlogopite** : directly reflects the hydrophobicity spectrum of these minerals. Apatite, the target ore mineral, responds best to fatty acid collectors. Carbonate gangue (calcite, dolomite) shows moderate inadvertent activation. Silicates and micas are naturally hydrophilic and resist collector adsorption. This ranking is critical for circuit design: it determines the required flotation time, the expected grade-recovery trade-off, and which gangue minerals are most likely to contaminate concentrates.
 
 ---
 
@@ -194,7 +194,7 @@ This 3×3 faceted plot shows the ln(predicted/actual) ratio for different minera
 
 - **Oxides**: Moderate spread with some positive outliers in CB and CC streams, indicating occasional over-prediction. Oxide behavior is moderately well captured.
 
-- **Mass**: Shows a distinctive bimodal pattern with both positive and negative tails, particularly visible in CB, CC, CD, and TD streams as long negative whiskers. This reflects the challenge of predicting overall mass recovery accurately at the individual particle level — mass recovery integrates multiple mineral components, each with different flotation kinetics.
+- **Mass**: Shows a distinctive bimodal pattern with both positive and negative tails, particularly visible in CB, CC, CD, and TD streams as long negative whiskers. This reflects the challenge of predicting overall mass recovery accurately at the individual particle level mass recovery integrates multiple mineral components, each with different flotation kinetics.
 
 ### Physical Interpretation
 
