@@ -34,11 +34,11 @@ This forest plot displays the log-hazard ratio (coefficient) and 95% confidence 
 
 ### Key Observations
 
-- **Apatite** (top, far right): The only feature with a strong **positive** coefficient (+0.55), meaning apatite-rich particles float **74% faster** than average. This makes physical sense — apatite is the target ore mineral, selectively collected by flotation reagents.
+- **Apatite** (top, far right): The only feature with a strong positive coefficient (+0.55), meaning apatite-rich particles float 74% faster than average. This makes physical sense — apatite is the target ore mineral, selectively collected by flotation reagents.
 
 - **ECD** (equivalent circle diameter): A small but highly significant positive effect (+0.02). Larger particles float slightly faster in this size fraction.
 
-- **Phlogopite.surf** (bottom, far left): The strongest **negative** coefficient (−0.99), meaning particles with phlogopite surface exposure float **63% slower**. Phlogopite (mica) surfaces are hydrophilic and resist collector adsorption.
+- **Phlogopite.surf** (bottom, far left): The strongest negative coefficient (−0.99), meaning particles with phlogopite surface exposure float 63% slower. Phlogopite (mica) surfaces are hydrophilic and resist collector adsorption.
 
 - **Quartz.surf** and **Albite.surf**: Both show significant negative effects (~−0.52), reducing flotation rate by ~40%. These silicate gangue minerals have naturally hydrophilic surfaces.
 
@@ -52,7 +52,7 @@ This forest plot displays the log-hazard ratio (coefficient) and 95% confidence 
 
 ![Baseline Cumulative Hazard](figures/baseline_hazard.png)
 
-The baseline cumulative hazard H(t) represents the average flotation kinetics when all covariates are at their mean values. It approximates **k × t** (rate constant × time), providing a proxy for the overall kinetic rate of the flotation process.
+The baseline cumulative hazard H(t) represents the average flotation kinetics when all covariates are at their mean values. It approximates k × t (rate constant × time), providing a proxy for the overall kinetic rate of the flotation process.
 
 ### Key Observations
 
@@ -70,17 +70,17 @@ This 3×3 faceted boxplot shows the predicted log-hazard (floatability score) fo
 
 ### Key Observations
 
-- **Apatite-dominant particles** (top left): Show the **highest predicted floatability** with median log-hazard values centered around +0.2 to +0.4. The CA stream (first concentrate) shows the widest spread, indicating a mix of highly floatable and moderately floatable apatite particles. The TD (tailings) stream shows notably lower predicted values, consistent with unfloated apatite being locked with gangue minerals.
+- **Apatite-dominant particles** (top left): Show the highest predicted floatability with median log-hazard values centered around +0.2 to +0.4. The CA stream (first concentrate) shows the widest spread, indicating a mix of highly floatable and moderately floatable apatite particles. The TD (tailings) stream shows notably lower predicted values, consistent with unfloated apatite being locked with gangue minerals.
 
 - **Calcite, Dolomite, Pyrite-dominant particles**: These groups show **uniformly negative** predicted log-hazards (around −0.3 to −0.4), indicating slow flotation. There is minimal distinction between streams, suggesting the model predicts low floatability regardless of where these particles actually end up.
 
-- **Quartz and Albite-dominant particles**: Show the **most negative** predicted values (around −0.8 to −0.9), confirming these silicate gangue minerals are the least floatable. Both show very tight distributions with few outliers.
+- **Quartz and Albite-dominant particles**: Show the most negative predicted values (around −0.8 to −0.9), confirming these silicate gangue minerals are the least floatable. Both show very tight distributions with few outliers.
 
 - **Actinolite, Biotite, Chalcopyrite-dominant particles**: All show moderately negative predicted log-hazards (around −0.3 to −0.5), with Chalcopyrite showing slightly more variation due to its sulfide character.
 
 ### Physical Interpretation
 
-The model clearly separates **apatite-dominant particles** (positive predicted flotation) from **all gangue-dominant particles** (negative predicted flotation). This separation is the fundamental basis of the flotation process — the model has learned to distinguish the ore mineral from gangue based on particle properties.
+The model clearly separates apatite-dominant particles (positive predicted flotation) from all gangue-dominant particles (negative predicted flotation). This separation is the fundamental basis of the flotation process, the model has learned to distinguish the ore mineral from gangue based on particle properties.
 
 ---
 
@@ -110,7 +110,7 @@ This 2×3 faceted boxplot shows a subset of minerals with more detail.
 
 ![Predicted Recovery Profiles](figures/recovery_profiles_49.png)
 
-This 7×7 grid of subplots shows the **predicted recovery probability over time** for 49 randomly selected particles. Each subplot represents one particle, with time (minutes) on the x-axis and recovery probability (0–1) on the y-axis.
+This 7×7 grid of subplots shows the predicted recovery probability over time for 49 randomly selected particles. Each subplot represents one particle, with time (minutes) on the x-axis and recovery probability (0–1) on the y-axis.
 
 ### Key Observations
 
@@ -124,7 +124,7 @@ This 7×7 grid of subplots shows the **predicted recovery probability over time*
 
 ### Physical Interpretation
 
-These profiles demonstrate that the Cox PH survival model can predict **individual particle recovery kinetics** — not just average behavior, but particle-by-particle trajectories. This is valuable for: (1) circuit simulation, (2) identifying particle types that are slow-floating but ultimately recoverable, and (3) optimizing flotation time to balance recovery vs. grade.
+These profiles demonstrate that the Cox PH survival model can predict individual particle recovery kinetics, not just average behavior, but particle-by-particle trajectories. This is valuable for: (1) circuit simulation, (2) identifying particle types that are slow-floating but ultimately recoverable, and (3) optimizing flotation time to balance recovery vs. grade.
 
 ---
 
@@ -146,7 +146,7 @@ This histogram shows the distribution of R² values computed for each particle's
 
 ### Physical Interpretation
 
-The high R² values confirm that the **survival analysis framework is appropriate for flotation kinetics**. The model does not merely predict average behavior — it captures particle-level variation in flotation rates driven by mineralogy, surface composition, and particle size. This level of individual particle modeling supports the use of Cox PH models for understanding and optimizing mineral processing operations.
+The high R² values confirm that the survival analysis framework is appropriate for flotation kinetics. The model does not merely predict average behavior, it captures particle-level variation in flotation rates driven by mineralogy, surface composition, and particle size. This level of individual particle modeling supports the use of Cox PH models for understanding and optimizing mineral processing operations.
 
 ---
 
@@ -154,7 +154,7 @@ The high R² values confirm that the **survival analysis framework is appropriat
 
 ![Kinetic Rate Constants by Mineral](figures/kinetic_rate_by_mineral.png)
 
-This boxplot shows the distribution of **predicted kinetic rate constants** (*k_m*, in min⁻¹) for particles grouped by their dominant mineral. Higher *k_m* values mean faster flotation.
+This boxplot shows the distribution of predicted kinetic rate constants (*k_m*, in min⁻¹) for particles grouped by their dominant mineral. Higher *k_m* values mean faster flotation.
 
 ### Key Observations
 
@@ -162,7 +162,7 @@ This boxplot shows the distribution of **predicted kinetic rate constants** (*k_
 
 - **Calcite and Dolomite** have similar median rates (~0.15 min⁻¹), roughly half that of apatite. Both are carbonate minerals that can exhibit some collector uptake but are fundamentally less hydrophobic than apatite. Dolomite shows a slightly wider spread with more high-rate outliers.
 
-- **Phlogopite** has the **lowest** median rate (~0.05 min⁻¹) and the tightest distribution. This is consistent with the forest plot (Figure 1) where phlogopite surface had the strongest negative coefficient. Mica particles are consistently slow to float.
+- **Phlogopite** has the lowest median rate (~0.05 min⁻¹) and the tightest distribution. This is consistent with the forest plot (Figure 1) where phlogopite surface had the strongest negative coefficient. Mica particles are consistently slow to float.
 
 - **Quartz** is second-lowest (~0.09 min⁻¹) with a moderate spread. Some quartz particles show higher rates (up to ~0.22 min⁻¹), likely due to association with apatite or collector adsorption at specific surface sites.
 
@@ -176,7 +176,7 @@ The kinetic rate hierarchy — **Apatite >> Calcite ≈ Dolomite > Quartz > Phlo
 
 ![Model Residuals by Mineral Group](figures/residuals_by_mineral_group.png)
 
-This 3×3 faceted plot shows the **ln(predicted/actual)** ratio for different mineral groups across flotation streams. Values centered on zero (dashed line) indicate unbiased predictions. Positive values mean over-prediction; negative values mean under-prediction.
+This 3×3 faceted plot shows the ln(predicted/actual) ratio for different mineral groups across flotation streams. Values centered on zero (dashed line) indicate unbiased predictions. Positive values mean over-prediction; negative values mean under-prediction.
 
 ### Key Observations
 
@@ -190,15 +190,15 @@ This 3×3 faceted plot shows the **ln(predicted/actual)** ratio for different mi
 
 - **Sulfides**: Good centering overall but wider spread in CD and TD streams with notable negative outliers. Some sulfide particles in later streams and tailings are recovered faster than predicted, possibly due to galvanic interactions or collector scavenging.
 
-- **Micas**: The **tightest residual distributions** of any group, closely centered on zero. The model predicts mica flotation behavior with the highest consistency, reflecting the strong and reliable negative coefficient for phlogopite surface.
+- **Micas**: The tightest residual distributions of any group, closely centered on zero. The model predicts mica flotation behavior with the highest consistency, reflecting the strong and reliable negative coefficient for phlogopite surface.
 
 - **Oxides**: Moderate spread with some positive outliers in CB and CC streams, indicating occasional over-prediction. Oxide behavior is moderately well captured.
 
-- **Mass**: Shows a **distinctive bimodal pattern** with both positive and negative tails, particularly visible in CB, CC, CD, and TD streams as long negative whiskers. This reflects the challenge of predicting overall mass recovery accurately at the individual particle level — mass recovery integrates multiple mineral components, each with different flotation kinetics.
+- **Mass**: Shows a distinctive bimodal pattern with both positive and negative tails, particularly visible in CB, CC, CD, and TD streams as long negative whiskers. This reflects the challenge of predicting overall mass recovery accurately at the individual particle level — mass recovery integrates multiple mineral components, each with different flotation kinetics.
 
 ### Physical Interpretation
 
-Overall, the residual analysis demonstrates that the model is **largely unbiased** — residuals center near zero for most mineral groups and streams. The tightest fits are for **micas** (consistent non-floaters) and **dolomite** (consistent moderate behavior). The widest residuals occur for **mass** (aggregate recovery) and **calcite** (variable entrainment behavior). This pattern suggests the model captures intrinsic floatability well but has more difficulty with stochastic effects like entrainment and mechanical carry-over, which are not directly encoded in particle mineralogy.
+Overall, the residual analysis demonstrates that the model is largely unbiased, residuals center near zero for most mineral groups and streams. The tightest fits are for micas (consistent non-floaters) and dolomite (consistent moderate behavior). The widest residuals occur for mass (aggregate recovery) and calcite (variable entrainment behavior). This pattern suggests the model captures intrinsic floatability well but has more difficulty with stochastic effects like entrainment and mechanical carry-over, which are not directly encoded in particle mineralogy.
 
 ---
 
@@ -218,7 +218,7 @@ Overall, the residual analysis demonstrates that the model is **largely unbiased
 
 ### 1. Surface Mineralogy Dominates Over Bulk Composition
 
-The model retained surface exposure fractions (`.surf` features) as the significant gangue predictors while eliminating corresponding bulk composition variables. This confirms that **what is on the particle surface determines flotation behavior**, not what is inside the particle.
+The model retained surface exposure fractions (`.surf` features) as the significant gangue predictors while eliminating corresponding bulk composition variables. This confirms that "what is on the particle surface determines flotation behavior?", not what is inside the particle.
 
 ### 2. Apatite (Ore) vs. Gangue Surface: A Clear Separation
 
