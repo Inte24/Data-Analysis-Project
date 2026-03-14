@@ -148,7 +148,7 @@ This produces a sparse, interpretable model where retained features have coeffic
 
 ### What is Bootstrapping?
 
-Instead of fitting the Cox PH model once on the full dataset, we fit it 1000 times on random subsamples (50,000 rows each, drawn with replacement). Each iteration produces a set of coefficient estimates. The final coefficients are the mean across all 1000 fits.
+Instead of fitting the Cox PH model once on the full dataset, we fit it 1000 times on random subsamples (50,000 rows each, drawn with replacement). Each iteration produces a set of coefficient estimates. The final coefficients are the mean across all 1000 fits. This also makes sure to mimic real life situations where not each class will be balanced and we might get an instant where one class outweighs the other. 
 
 ### Why Bootstrap?
 
