@@ -118,7 +118,7 @@ This 7×7 grid of subplots shows the predicted recovery probability over time fo
 
 - **Wide range of predicted recoveries**: Some particles reach ~90–95% recovery by 6 minutes (highly floatable, likely apatite-rich), while others only reach ~10–20% (poorly floatable gangue particles). This range reflects the heterogeneity of the particle population.
 
-- **Early recovery (0–1.5 min) shows the most discrimination**: The steepest part of the curves, where the most separation between floatable and non-floatable particles occurs — is in the first 1–2 minutes. This aligns with practical flotation circuit design, where the early concentrates (CA, CB) are the highest grade.
+- **Early recovery (0–1.5 min) shows the most discrimination**: The steepest part of the curves, where the most separation between floatable and non-floatable particles occurs, is in the first 1–2 minutes. This aligns with practical flotation circuit design, where the early concentrates (CA, CB) are the highest grade.
 
 - **Curve shapes are consistent**: Despite the diversity in final recovery, all curves share the same functional form (exponential approach to a plateau), confirming the model's first-order kinetic assumption is appropriate.
 
