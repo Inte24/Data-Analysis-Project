@@ -72,7 +72,7 @@ This 3×3 faceted boxplot shows the predicted log-hazard (floatability score) fo
 
 - **Apatite-dominant particles** (top left): Show the highest predicted floatability with median log-hazard values centered around +0.2 to +0.4. The CA stream (first concentrate) shows the widest spread, indicating a mix of highly floatable and moderately floatable apatite particles. The TD (tailings) stream shows notably lower predicted values, consistent with unfloated apatite being locked with gangue minerals.
 
-- **Calcite, Dolomite, Pyrite-dominant particles**: These groups show **uniformly negative** predicted log-hazards (around −0.3 to −0.4), indicating slow flotation. There is minimal distinction between streams, suggesting the model predicts low floatability regardless of where these particles actually end up.
+- **Calcite, Dolomite, Pyrite-dominant particles**: These groups show uniformly negative predicted log-hazards (around −0.3 to −0.4), indicating slow flotation. There is minimal distinction between streams, suggesting the model predicts low floatability regardless of where these particles actually end up.
 
 - **Quartz and Albite-dominant particles**: Show the most negative predicted values (around −0.8 to −0.9), confirming these silicate gangue minerals are the least floatable. Both show very tight distributions with few outliers.
 
