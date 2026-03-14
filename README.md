@@ -121,14 +121,14 @@ Before bootstrapping, it was critical to find the correct penalizer (regularizat
 | 0.005 | ~7 | Still retains some marginal features |
 | 0.01 | ~6 | Getting closer, but some weak signals remain |
 | **0.02** | **5** | **Sweet spot, retains only strong, interpretable predictors** |
-| 0.05 | ~3 | Starting to over-penalize — loses some real signals |
-| 0.1 | 2 | Too aggressive — nearly all coefficients driven to ≈0, only Quartz and ECD survive |
+| 0.05 | ~3 | Starting to over-penalize, loses some real signals |
+| 0.1 | 2 | Too aggressive, nearly all coefficients driven to ≈0, only Quartz and ECD survive |
 
 ### Why Penalizer = 0.02?
 
 **Too low (0.001)**: The model retains 9 features with non-zero coefficients, including noisy ones. For example at penalizer=0.001, Actinolite (−0.56), Solidity (−0.37), and Chalcopyrite (−0.008) all have non-zero coefficients, but these are not stable across bootstrap iterations, they are likely artifacts of overfitting.
 
-**Too high (0.1)**: The model shrinks almost everything to zero. At penalizer=0.1, features like Albite (−3.4e-06) and Biotite (−3.5e-06) that should be meaningful predictors are effectively eliminated. Only Quartz.surf (−0.034) and ECD (0.012) survive — the model is too aggressive and loses real signal.
+**Too high (0.1)**: The model shrinks almost everything to zero. At penalizer=0.1, features like Albite (−3.4e-06) and Biotite (−3.5e-06) that should be meaningful predictors are effectively eliminated. Only Quartz.surf (−0.034) and ECD (0.012) survive, the model is too aggressive and loses real signal.
 
 **Just right (0.02)**: The model retains 5 features with meaningful coefficients:
 
@@ -177,9 +177,9 @@ Fitting a Cox PH model requires optimizing a partial likelihood over all risk se
 **Why 1,000 iterations?**
 
 - By the law of large numbers, the mean coefficient estimate converges to the true population value as the number of iterations increases
-- The standard error of the bootstrap mean scales as σ/√n — with 1000 iterations, the uncertainty in the mean coefficient is ~3% of the standard deviation across iterations (1/√1000 ≈ 0.032)
+- The standard error of the bootstrap mean scales as σ/√n, with 1000 iterations, the uncertainty in the mean coefficient is ~3% of the standard deviation across iterations (1/√1000 ≈ 0.032)
 - Beyond 1000, there are diminishing returns: going from 1000 to 10,000 iterations would only improve precision by a factor of √10 ≈ 3.2×, at 10× the computational cost
-- 1000 iterations also gives reliable percentile-based confidence intervals — the 2.5th percentile is estimated from ~25 data points, which is sufficient for stable CI bounds
+- 1000 iterations also gives reliable percentile-based confidence intervals, the 2.5th percentile is estimated from ~25 data points, which is sufficient for stable CI bounds
 
 ### Bootstrap Workflow
 
@@ -282,7 +282,7 @@ See [RESULTS.md](RESULTS.md) for detailed findings. Key highlights:
 
 | Feature | Coefficient | Hazard Ratio | Interpretation |
 |---------|------------|--------------|----------------|
-| **Apatite** | +0.55 | 1.74 | 74% faster flotation (ore mineral — most floatable) |
+| **Apatite** | +0.55 | 1.74 | 74% faster flotation (ore mineral, most floatable) |
 | **Phlogopite.surf** | −0.99 | 0.37 | 63% slower flotation (hydrophilic surface suppresses recovery) |
 | **Quartz.surf** | −0.52 | 0.59 | 41% slower flotation |
 | **Albite.surf** | −0.52 | 0.60 | 40% slower flotation |
