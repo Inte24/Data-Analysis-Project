@@ -1,6 +1,6 @@
 # Froth Flotation Survival Analysis
 
-A Cox Proportional Hazards model with bootstrap LASSO regularization applied to mineral particle flotation data. This project models individual particle recovery kinetics by framing flotation as a survival problem: concentrates are "events" and tailings are "censored" observations.
+A Cox Proportional Hazards model with bootstrap LASSO regularization applied to mineral particle flotation data. This project models individual particle recovery kinetics by framing flotation as a survival problem: floating on the top = "death" and staying in the concentrate as "survival".
 
 ## Understanding the Data
 
