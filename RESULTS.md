@@ -20,7 +20,7 @@ Bootstrap aggregation (1000 iterations, 50k subsamples each) was used to ensure 
 | Partial AIC | 5,735,176.37 |
 | Mean R² (particle kinetics) | 0.96 |
 
-The concordance of 0.62 indicates the model correctly ranks particles by flotation speed 62% of the time — a reasonable result for individual particle data where stochastic effects are significant.
+The concordance of 0.62 indicates the model correctly ranks particles by flotation speed 62% of the time, a reasonable result for individual particle data where stochastic effects are significant.
 
 The mean R² of 0.96 demonstrates that the model reproduces individual particle recovery kinetics very well, validating the survival analysis framework for flotation.
 
